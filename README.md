@@ -2,7 +2,7 @@
 
 ### TEST STATUS
 
-![example workflow](https://github.com/github/docs/actions/workflows/main.yml/badge.svg)
+![workflow status](https://github.com/mayank1004/cypress-sample/actions/workflows/main.yml/badge.svg)
 
 ## How to install
 - (tested node version 14.17.0)
