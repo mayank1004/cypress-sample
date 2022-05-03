@@ -7,5 +7,5 @@ When ('the user is on google page', () => {
 Then('the user sees google search button', () => {
 	cy
     .get('[aria-label="Google Search"]')
-    .should('be.visible');
+    .should('be.not.visible');
 });
