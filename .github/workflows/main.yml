@@ -14,5 +14,5 @@ jobs:
         uses: cypress-io/github-action@v2
         with:
           runTests: false
-          browser: firefox
+          browser: chrome
           build: npm run cy:run:ci
