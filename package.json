@@ -7,7 +7,7 @@
     "test": "cypress run --spec 'cypress/integration/unit_tests/**/*'",
     "cypress:open": "cypress open",
     "cy:run": "cypress run",
-    "cy:run:ci": "cypress run -e TAGS='@CI'",
+    "cy:run:ci": "cypress run --spec 'cypress/integration/features/**/*' -e TAGS='@CI'",
     "cy:run:chrome": "cypress run --browser chrome --headed",
     "cy:run:firefox": "cypress run --browser firefox --headed"
   },

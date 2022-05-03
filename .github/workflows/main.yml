@@ -15,8 +15,7 @@ jobs:
         uses: cypress-io/github-action@v2
         with:
           runTests: false
-          start: npm run test
-          spec: cypress/integration/unit_tests
+          build: npm run test
       
       - name: Cypress smoke test
         uses: cypress-io/github-action@v2
