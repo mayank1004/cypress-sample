@@ -6,6 +6,7 @@
   "scripts": {
     "cypress:open": "cypress open",
     "cy:run": "cypress run",
+    "cy:run:ci": "cypress run -e TAGS='@CI'",
     "cy:run:chrome": "cypress run --browser chrome --headed"
   },
   "author": "",

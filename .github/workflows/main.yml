@@ -14,4 +14,4 @@ jobs:
         uses: cypress-io/github-action@v2
         with:
           browser: firefox
-          build: npm run cy:run
+          build: npm run cy:run:ci
