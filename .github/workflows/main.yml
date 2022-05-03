@@ -13,5 +13,6 @@ jobs:
       - name: Cypress run
         uses: cypress-io/github-action@v2
         with:
+          runTests: false
           browser: firefox
           build: npm run cy:run:ci
