@@ -4,6 +4,7 @@
   "description": "Sample cypress BDD project",
   "main": "index.js",
   "scripts": {
+    "test": "cypress run --spec 'cypress/integration/unit_tests/**/*'",
     "cypress:open": "cypress open",
     "cy:run": "cypress run",
     "cy:run:ci": "cypress run -e TAGS='@CI'",

@@ -8,11 +8,19 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
+      
       # Install NPM dependencies, cache them correctly
       # and run all Cypress tests
-      - name: Cypress run
+      - name: Cypress Unit test
         uses: cypress-io/github-action@v2
         with:
+          runTests: false
+          spec: cypress/integration/unit_tests
+      
+      - name: Cypress smoke test
+        uses: cypress-io/github-action@v2
+        with:
+          install: false
           runTests: false
           browser: chrome
           build: npm run cy:run:ci
